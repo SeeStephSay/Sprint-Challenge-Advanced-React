@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { toggleDarkMode } from '../hooks/toggleDarkMode';
+import toggleDarkMode from '../hooks/ToggleDarkMode.js';
 
 const NavBar = () => {
 	const [ darkMode, setDarkMode ] = toggleDarkMode();
@@ -8,10 +8,10 @@ const NavBar = () => {
 	return (
 		<nav className='navbar'>
 			<h1>Women's World Cup Player Rankings</h1>
-			<h4>Based on worldwide Google searches dated June-July 2019</h4>
-			<Link to='/'>View Rankings</Link>
+			<h3>Based on worldwide Google searches dated June-July 2019</h3>
+			{/* <Link to='/'>View Rankings</Link> */}
 
-			<div className='dark-mode__toggle'>
+			<div className='dark-mode__toggle' data-testid='toggle-element'>
 				<div onClick={setDarkMode} className={darkMode ? 'toggle toggled' : 'toggle'} />
 			</div>
 		</nav>

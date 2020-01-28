@@ -1,8 +1,8 @@
 import React from 'react';
 import axios from 'axios';
 import './App.css';
-import ContentTable from './component/ContentTable';
-import NavBar from './component/NavBar';
+import ContentTable from './components/ContentTable';
+import NavBar from './components/NavBar';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 
 class App extends React.Component {

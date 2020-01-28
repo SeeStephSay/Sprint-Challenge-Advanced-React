@@ -6,7 +6,7 @@ import React, { useState } from 'react';
 // Update localStorage when needed
 // Parse data from localStorage and stringify new data getting stored
 
-const useLocalStorage = (key, initialValue) => {
+const UseLocalStorage = (key, initialValue) => {
 	const [ storedValue, setStoredValue ] = useState(() => {
 		// What is called from the cb will be the storedValue
 		const item = window.localStorage.getItem(key);
@@ -26,4 +26,4 @@ const useLocalStorage = (key, initialValue) => {
 	return [ storedValue, setValue ];
 };
 
-export default useLocalStorage;
+export default UseLocalStorage;
