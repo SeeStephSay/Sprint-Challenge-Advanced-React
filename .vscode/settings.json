@@ -1,8 +1,11 @@
 {
   "cSpell.words": [
-    "Unmount"
+    "Unmount",
+    "mdbreact"
   ],
   "cSpell.ignoreWords": [
+    "codebases",
+    "fortawesome",
     "lifecycle"
   ]
 }
