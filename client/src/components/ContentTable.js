@@ -25,6 +25,8 @@ const ContentTable = (props) => {
 		],
 		rows    : props.players,
 	};
+
+	return <MDBDataTable striped bordered hover data={data} />;
 };
 
 export default ContentTable;
