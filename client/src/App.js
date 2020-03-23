@@ -1,4 +1,6 @@
 import React from 'react';
+import NavBar from './components/NavBar';
+import PlayerCard from './components/PlayerCard';
 import './App.css';
 
 class App extends React.Component {
